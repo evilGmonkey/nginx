@@ -2,5 +2,5 @@
  
 set -e -x
 echo "starting supervisor in foreground"
-supervisord
-top
+supervisord -c /etc/supervisord.conf
+tail -F /var/log/nginx/error.log
