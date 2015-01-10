@@ -7,7 +7,7 @@ FROM		uhurunet/fedora21
 MAINTAINER	Frederick Mbuya "freddie@uhurunet.com"
 
 RUN		yum -y update
-RUN     yum install -y nginx php-fpm supervisor
+RUN     yum install -y nginx php-fpm
 RUN		rm /etc/php-fpm.d/www.conf
 
 ADD nginx.conf /etc/nginx/nginx.conf
